@@ -1,10 +1,9 @@
-package textQuestGame;
+package text.quest.game;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class First {
-    Second partTwo = new Second();
 
     public void start(){
         System.out.println("Тебе исполнилось 18 и тебя выгнали из дома, выбери где ты останешься на ночь. Выбери один из вариантов:");
@@ -52,7 +51,7 @@ public class First {
         }
 
         if(choose == 1){
-            partTwo.patty();
+            Second.patty();
         }
         else if(choose == 2){
             goodNight();
@@ -83,7 +82,7 @@ public class First {
             youDied();
         }
         else if(choose == 2){
-            partTwo.soloWay();
+            Second.soloWay();
         }
         else{
             System.out.println("Неверный выбор. Попробуйте еще раз!");
@@ -93,7 +92,7 @@ public class First {
     }
 
     //3.
-    public void youDied(){
+    public static void youDied(){
         System.out.println("Потрачено!");
     }
 
